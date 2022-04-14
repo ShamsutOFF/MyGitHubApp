@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My GitHub App</string>
+    <string name="hint_for_edit_text">Введите репозиторий</string>
+</resources>

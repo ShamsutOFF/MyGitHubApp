@@ -1,8 +1,8 @@
-package ru.gb.android.myapplication.domain.repos.github.impls.room
+package ru.gb.android.myapplication.data.repos.github.impls.room
 
 import android.os.Handler
-import ru.gb.android.myapplication.domain.entities.GithubRepoEntity
-import ru.gb.android.myapplication.domain.repos.github.GithubUserRepository
+import ru.gb.android.myapplication.data.entities.GithubRepoEntity
+import ru.gb.android.myapplication.data.repos.github.GithubUserRepository
 
 class RoomGithubUserRepositoryImpl(
     private val dao: GithubRepoDao,

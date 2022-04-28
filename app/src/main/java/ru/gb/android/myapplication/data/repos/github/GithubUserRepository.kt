@@ -1,6 +1,6 @@
-package ru.gb.android.myapplication.domain.repos.github
+package ru.gb.android.myapplication.data.repos.github
 
-import ru.gb.android.myapplication.domain.entities.GithubRepoEntity
+import ru.gb.android.myapplication.data.entities.GithubRepoEntity
 
 
 interface GithubUserRepository {

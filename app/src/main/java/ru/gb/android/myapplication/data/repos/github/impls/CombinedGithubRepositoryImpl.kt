@@ -1,12 +1,12 @@
-package ru.gb.android.myapplication.domain.repos.github.impls
+package ru.gb.android.myapplication.data.repos.github.impls
 
 import android.os.Handler
 import retrofit2.Retrofit
-import ru.gb.android.myapplication.domain.entities.GithubRepoEntity
-import ru.gb.android.myapplication.domain.repos.github.GithubUserRepository
-import ru.gb.android.myapplication.domain.repos.github.impls.room.GithubRepoDao
-import ru.gb.android.myapplication.domain.repos.github.impls.room.RoomGithubUserRepositoryImpl
-import ru.gb.android.myapplication.domain.repos.github.impls.web.WebGithubUserRepositoryImpl
+import ru.gb.android.myapplication.data.entities.GithubRepoEntity
+import ru.gb.android.myapplication.data.repos.github.GithubUserRepository
+import ru.gb.android.myapplication.data.repos.github.impls.room.GithubRepoDao
+import ru.gb.android.myapplication.data.repos.github.impls.room.RoomGithubUserRepositoryImpl
+import ru.gb.android.myapplication.data.repos.github.impls.web.WebGithubUserRepositoryImpl
 
 class CombinedGithubRepositoryImpl(
     retrofit: Retrofit,

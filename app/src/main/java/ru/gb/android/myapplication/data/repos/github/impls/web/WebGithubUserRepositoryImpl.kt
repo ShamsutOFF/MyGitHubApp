@@ -1,12 +1,12 @@
-package ru.gb.android.myapplication.domain.repos.github.impls.web
+package ru.gb.android.myapplication.data.repos.github.impls.web
 
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
-import ru.gb.android.myapplication.domain.entities.GithubRepoEntity
-import ru.gb.android.myapplication.domain.entities.GithubUserProfileEntity
-import ru.gb.android.myapplication.domain.repos.github.GithubUserRepository
+import ru.gb.android.myapplication.data.entities.GithubRepoEntity
+import ru.gb.android.myapplication.data.entities.GithubUserProfileEntity
+import ru.gb.android.myapplication.data.repos.github.GithubUserRepository
 
 class WebGithubUserRepositoryImpl(private val retrofit: Retrofit) : GithubUserRepository {
     private val service: GithubWebService by lazy { retrofit.create(GithubWebService::class.java) }

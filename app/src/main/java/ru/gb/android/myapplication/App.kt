@@ -5,12 +5,12 @@ import android.os.Handler
 import androidx.room.Room
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import ru.gb.android.myapplication.domain.repos.github.impls.CombinedGithubRepositoryImpl
-import ru.gb.android.myapplication.domain.repos.github.impls.room.GithubDatabaseRoom
+import ru.gb.android.myapplication.data.repos.github.impls.CombinedGithubRepositoryImpl
+import ru.gb.android.myapplication.data.repos.github.impls.room.GithubDatabaseRoom
 
 private const val BASE_URL = "https://api.github.com/"
 
-class MyApplication : Application() {
+class App : Application() {
 
     private val retrofit: Retrofit by lazy {
         Retrofit.Builder()

@@ -4,8 +4,8 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
-import ru.gb.android.myapplication.domain.repos.github.GithubUserRepository
-import ru.gb.android.myapplication.MyApplication
+import ru.gb.android.myapplication.data.repos.github.GithubUserRepository
+import ru.gb.android.myapplication.App
 import ru.gb.android.myapplication.databinding.ActivityMainBinding
 
 
@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var githubUserRepository: GithubUserRepository
 
-    private val app by lazy { application as MyApplication }
+    private val app by lazy { application as App }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

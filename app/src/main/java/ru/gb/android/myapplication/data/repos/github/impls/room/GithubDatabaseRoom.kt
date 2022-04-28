@@ -1,4 +1,4 @@
-package ru.gb.android.myapplication.domain.repos.github.impls.room
+package ru.gb.android.myapplication.data.repos.github.impls.room
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
